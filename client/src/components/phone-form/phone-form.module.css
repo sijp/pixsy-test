@@ -1,0 +1,20 @@
+.field {
+  padding: 5px;
+  margin: 10px;
+}
+
+.field label {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
+  color: #333;
+}
+
+.field select {
+  width: 250px;
+}
+
+.field input {
+  width: 250px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+.container {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  z-index: 100;
+  background-color: #fcfcfc;
+  padding: 20px;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.message {
+  color: red;
+  font-weight: "bold";
+}
