@@ -33,7 +33,13 @@ function OtpForm({ onSubmit, phoneNumber }) {
           </label>
         </div>
         <div className={classes.field}>
-          <input type="submit" data-testid="submit" value="Continue" />
+          <button
+            type="submit"
+            data-testid="submit"
+            className="pure-button pure-button-primary"
+          >
+            Continue
+          </button>
         </div>
       </form>
     </>

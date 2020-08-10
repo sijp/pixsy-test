@@ -34,13 +34,10 @@ function PhoneForm({ onSubmit, value = "" }) {
               <select
                 data-testid="country"
                 onChange={(e) => setCountry(e.target.value)}
+                defaultValue={country}
               >
                 {countryCodes.map((countryCode) => (
-                  <option
-                    key={countryCode[1]}
-                    value={countryCode[2]}
-                    selected={countryCode[2] === country}
-                  >
+                  <option key={countryCode[1]} value={countryCode[2]}>
                     {countryCode[0]} (+{countryCode[2]})
                   </option>
                 ))}
@@ -61,12 +58,14 @@ function PhoneForm({ onSubmit, value = "" }) {
             </label>
           </div>
           <div className={classes.field}>
-            <input
+            <button
               type="submit"
               data-testid="submit"
-              value="Continue"
               disabled={phoneNumber.length === 0}
-            />
+              className="pure-button pure-button-primary"
+            >
+              Continue
+            </button>
           </div>
         </fieldset>
       </form>
